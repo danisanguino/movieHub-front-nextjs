@@ -1,0 +1,28 @@
+  .container-movies {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px 0 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap:1rem;
+  }
+  
+  
+  /* .button-logout {
+    background-color: gray;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  
+  .button-logout:hover {
+    background-color: rgb(195, 195, 195);
+  } */
+  
+    
+  

@@ -1,0 +1,93 @@
+.card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 2px #bbbbbb80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.237);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(230, 230, 230);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 45px;
+    color: #777;
+    line-height: 0.9;
+    font-weight: 700;
+  }
+  
+  .card__genre-description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .card__score {
+    font-size: 20px;
+    color: #777;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+  
+  .card__score-puntuation {
+    margin: 10px 0 0;
+    font-size: 180px;
+    color: #777;
+    line-height: 1.4;
+    margin-top: -60px;
+    font-weight: bold;
+  }
+
+  .card__button-info {
+    background-color: #777;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 800;
+    transition: background-color 0.5s ease;
+
+  }
+
+  .card__button-info:hover {
+    background-color: #bb2121;
+
+  }

@@ -1,0 +1,28 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: linear-gradient(to bottom right, #111111, #6e6e6e);
+  color: rgb(209, 209, 209);
+  margin: 0 auto;
+  /* height: calc(100vh - 8rem); */
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 4rem;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+
+
+
+  
