@@ -45,7 +45,7 @@
   
   .card__title {
     margin: 0;
-    font-size: 45px;
+    font-size: 6rem;
     color: #777;
     line-height: 0.9;
     font-weight: 700;
@@ -53,8 +53,9 @@
   
   .card__genre-description {
     margin: 10px 0 0;
-    font-size: 14px;
+    font-size: 2rem;
     color: #777;
+    font-weight: 600;
     line-height: 1.4;
   }
   
@@ -79,15 +80,19 @@
     cursor: pointer;
     position: relative;
     border: none;
-    padding: 10px;
+    padding: 1rem;
     margin-top: 10px;
-    color: white;
+    font-size: 1rem;
     font-weight: 800;
     transition: background-color 0.5s ease;
 
   }
 
+  .card__button-info a{
+    text-decoration: none;
+    color: white;
+  }
+
   .card__button-info:hover {
     background-color: #bb2121;
-
   }

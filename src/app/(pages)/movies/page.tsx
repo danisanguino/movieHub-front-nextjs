@@ -1,38 +1,38 @@
 import React from 'react'
 import "./movies.css"
 import MovieCard from '../../../components/movieCard/movieCard'
-import { Rick } from '../../interfaceRick'
 import dotenv from 'dotenv';
+import { Movie } from '@/app/interface';
 
 dotenv.config();
 
-const RICK: string = process.env.URL_RICK || "" ; 
+const MovieHub: string = process.env.URL_LOCAL || "" ; 
 
-type Props = {}
 
-export default async function Movies({}: Props) {
+export default async function Movies() {
 
   try {
-    const data = await fetch(RICK);
-    // const data = await fetch("http://localhost:3800");
-    const JSONdata: Rick = await data.json();
-    // const results: Rick = JSONdata
+    const data = await fetch(MovieHub + "/movie");
+    const JSONdata = await data.json();
+
     return (
       <>
           <h1>Movies</h1>
   
           <div className='container-movies'>
 
-              {JSONdata.results.map((e) => {
+              {JSONdata.map((e: Movie) => {
                 
                 return (
                   <MovieCard
                     key={e.id}
                     id={e.id}
-                    img={e.image}
-                    name={e.name}
+                    image={e.image}
+                    title={e.title}
+                    score={e.score}
+                    genres={e.genres}
                   />
-                )})};
+                )})}
 
           </div>
       </>
