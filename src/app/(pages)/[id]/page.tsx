@@ -1,41 +1,55 @@
 import "./detail.css";
-import { Movie, Genre } from "@/app/interface";
+import { Movie, Genre, MovieGenre } from "@/app/interface";
+import Button from "@/components/button/button";
+import { FGenres, FOneMovie } from "@/utils/functions";
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-const MovieHub: string = process.env.URL_LOCAL || "" ; 
+type Props = {
+    params: {id: string} 
+} 
 
-export default async function MovieDetail () {
 
-    const data = await fetch(MovieHub + "/movie");
-    console.log(data)
-    const JSONdata: Movie = await data.json();
+
+export default async function MovieDetail ({params}: Props) {
+    const id = params?.id
+
+    const JSONdata: Movie = await FOneMovie(id);
+
+    const JSONgenres: Genre[] = await FGenres();
 
     return (
     <>
-        <h1 key={JSONdata.id}>{JSONdata.title}</h1>
+        <h1>{JSONdata.title}</h1>
         <div className="container-movie-detail">
-            <img src="https://res.cloudinary.com/dqm1upnhh/image/upload/v1712680478/Regreso_al_futuro-139415628-large_jwopg4.jpg" alt="nombre de la peli"/>
+            <img src={JSONdata.image} alt={JSONdata.title}/>
             <div className="movie-data">
                 <h3>Sinopsis</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel viverra sem. Etiam in volutpat est, eget molestie purus. Donec eget tempus quam, ac dignissim ipsum. Suspendisse pretium varius maximus. Donec tincidunt ligula libero, id fringilla enim gravida et. Maecenas convallis orci condimentum volutpat interdum. Phasellus aliquam diam sit amet purus tempor suscipit. Proin auctor purus a tristique rhoncus. Quisque laoreet molestie vestibulum. Aenean vehicula lacus eget quam pretium interdum. Vestibulum vel bibendum ligula, sed dapibus est. Nam interdum venenatis turpis, in rutrum lorem finibus ut. Nulla in euismod urna. Curabitur ultrices velit eu massa vestibulum, sed tempor quam sodales.</p>
-                <h4>Genre/s</h4>
-                {JSONdata.map((e: Genre)=> {
+                <p>{JSONdata.sinopsis}</p>
 
-                    return (
-                      <ul>
-                           <li>{e.genreId}</li>
-                       </ul>
+                <ul>
 
-                    )})}
+                {JSONdata.genres.map((e: MovieGenre)=> {
+                        const genreName = JSONgenres.find((g)=> {
+                            return g.id === e.genreId
+                });
+
+                return <li key={e.genreId}>{genreName?.title}</li>})}
+
+
+
+                </ul>
                 <h4>Score</h4>
                 <div className="score-back">
-                <h5>{JSONdata.score}</h5>
-                 <button>Back</button>
+                <h5>{JSONdata.score} ⭐️</h5>
                  </div>
             </div>
         </div>
+                 <Button
+                    title={"back"}
+                    link={"movies"}
+                    />
     </>
     )
 };

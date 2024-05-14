@@ -9,6 +9,10 @@
     gap: 2rem;
 }
 
+.container-movie-detail .movie-data {
+    width: 100%;
+}
+
 .container-movie-detail h3 {
     font-size: 2.2rem;
 }

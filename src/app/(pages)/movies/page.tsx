@@ -1,19 +1,16 @@
 import React from 'react'
 import "./movies.css"
 import MovieCard from '../../../components/movieCard/movieCard'
-import dotenv from 'dotenv';
 import { Movie } from '@/app/interface';
+import { FMovies } from '@/utils/functions';
 
-dotenv.config();
 
-const MovieHub: string = process.env.URL_LOCAL || "" ; 
 
 
 export default async function Movies() {
 
   try {
-    const data = await fetch(MovieHub + "/movie");
-    const JSONdata = await data.json();
+    const FetchingMovies = await FMovies()
 
     return (
       <>
@@ -21,7 +18,7 @@ export default async function Movies() {
   
           <div className='container-movies'>
 
-              {JSONdata.map((e: Movie) => {
+              {FetchingMovies?.data.map((e: Movie) => {
                 
                 return (
                   <MovieCard
@@ -31,7 +28,7 @@ export default async function Movies() {
                     title={e.title}
                     score={e.score}
                     genres={e.genres}
-                  />
+                    sinopsis={e.sinopsis}                  />
                 )})}
 
           </div>
@@ -39,7 +36,7 @@ export default async function Movies() {
     )
     
   } catch (error) {
-    console.log(error)
+    console.log("From movie", error)
   }
 
   
