@@ -2,6 +2,7 @@ import Link from "next/link";
 import "./login.css"
 import Button from "@/components/button/button";
 
+
 export default function Home() {
 
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       
           <Button
             title={` Start! `}
-            link= {"/movies"}
+            link= {"/api/auth/login"}
             />
       </div>
     </main>
