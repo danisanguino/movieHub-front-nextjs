@@ -1,0 +1,24 @@
+.container-form {
+    /* position: fixed; */
+    /* display: flex; */
+    /* top: 0; 
+    left: 0;  */
+    width: 100vh; 
+    height: 100vh; 
+    /* align-items: center;
+    justify-content: center; */
+    background: linear-gradient(to bottom right, #111111, #6e6e6e);
+}
+
+.form-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 200px;
+}
+
+.form-upload input {
+    width: 20rem;
+}
+
