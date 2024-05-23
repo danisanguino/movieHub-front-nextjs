@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import  {UserProvider } from "@auth0/nextjs-auth0/client"
-import { Menu } from "@/components/menu/menu";
 const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,7 +18,6 @@ export default function RootLayout({
     <html lang="en">
         <UserProvider>
           <body className={inter.className}>
-          <Menu/>
             {children}
           </body>
         </UserProvider>

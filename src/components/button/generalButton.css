@@ -1,0 +1,22 @@
+.general-button {
+    height: 5rem;
+    padding: 0 3rem 0 3rem;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    background-color: rgb(197, 196, 196);
+    border: 3px solid black;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    text-align: center;
+}
+
+.general-button:hover {
+    border: 3px solid #bb2121;
+
+}
+
+.general-button a {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}

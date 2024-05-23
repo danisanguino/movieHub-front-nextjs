@@ -5,6 +5,9 @@ import "./form.css"
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from '@hookform/resolvers/zod';
 import { movieSchema } from '@/validations/movieSchema';
+import { UploadMovie } from '@/utils/functions';
+import Button from '../button/button';
+import GeneralButton from '../button/generalButton';
 
 type FormValues = {
     title: string;
@@ -17,17 +20,18 @@ export default function Form () {
             resolver: zodResolver(movieSchema)
     });
 
-    const onSubmit: SubmitHandler<FormValues> = (data) => {
+    const onSubmit: SubmitHandler<FormValues> = async (data) => {
             
-        // entiendo que aqui ira al back??
-        console.log(data)
+        console.log(data);
+
+        const result = await UploadMovie(data);
+        console.log(result);
+        reset();
     }
-
-    console.log(errors);
-
 
     return (
         <div className='container-form'>
+          <h2>Insert a Movie</h2>
             <form onSubmit={handleSubmit(onSubmit)} className='form-upload'>
                  <input type="text" id="image" placeholder='Url of image here' 
                  {...register("image", { required: 'la imagen es boligatory' })}
@@ -51,11 +55,14 @@ export default function Form () {
                     errors.score?.message && <p>{errors.score?.message}</p>
                  }
                 
-                <button>Insert</button>
-            </form>
+                {/* <GeneralButton
+                    link=""
+                    title='INSERT'/> */}
+                <button className='form-button'>Insert</button>
             <div>
                 {JSON.stringify(watch(), null, 2)}
             </div>
+            </form>
         </div>
     );
 }

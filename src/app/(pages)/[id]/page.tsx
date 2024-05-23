@@ -1,6 +1,8 @@
+import Button from "@/components/button/button";
 import "./detail.css";
 import { Movie, Genre, MovieGenre } from "@/app/interface";
-import Button from "@/components/button/button";
+// import Button from "@/components/button/button";
+import GeneralButton from "@/components/button/generalButton";
 import { FGenres, FOneMovie } from "@/utils/functions";
 import dotenv from 'dotenv';
 
@@ -35,21 +37,22 @@ export default async function MovieDetail ({params}: Props) {
                             return g.id === e.genreId
                 });
 
-                return <li key={e.genreId}>{genreName?.title}</li>})}
+                return <li className="genre-list" key={e.genreId}>{genreName?.title}</li>})}
 
 
 
                 </ul>
                 <h4>Score</h4>
                 <div className="score-back">
-                <h5>{JSONdata.score} ⭐️</h5>
+                <h5>{JSONdata.score} </h5>
                  </div>
-            </div>
-        </div>
-                 <Button
-                    title={"back"}
+                 <GeneralButton
+                    title={"BACK"}
                     link={"movies"}
                     />
+
+            </div>
+        </div>
     </>
     )
 };

@@ -3,7 +3,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px 3rem 30px;
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -35,6 +34,16 @@
 
 .container-movie-detail ul {
     list-style: none;
+}
+
+.container-movie-detail ul .genre-list {
+    background-color: #bb2121;
+    color: white;
+    padding: 0.5rem;
+    margin:1rem 0 1rem 0 ;
+    width: 5rem;
+    text-align: center;
+    font-weight: 600;
 }
 
 .container-movie-detail .movie-data {
