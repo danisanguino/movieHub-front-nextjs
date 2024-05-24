@@ -1,0 +1,61 @@
+.sidebar-wrapper {
+    position: fixed; 
+    width: 17rem;
+    height: 100vh;
+}
+
+.sidebar-wrapper button {
+    position: absolute;
+    right: 0;
+    top: 3rem;
+    cursor: pointer;
+    transform: translate(50%);
+}
+
+.sidebar {
+    height: 100%;
+    background-color: blueviolet;
+    padding: 1rem;
+    transform: all 0.3s linear;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+.sidebar .top {
+    width:  max-content;
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid yellow;
+}
+
+.sidebar .logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+.sidebar .buttons-information {
+    list-style: none;
+}
+
+
+.sidebar .buttons-information li {
+    background-color: black;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 0.5rem;
+}
+
+.sidebar .buttons-information li .title-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+[data-collapse="true"] {
+    width: 2rem;
+    transform: scaleX();
+}

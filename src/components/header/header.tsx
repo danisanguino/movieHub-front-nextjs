@@ -1,7 +1,9 @@
 import "./header.css"
 import Link from 'next/link';
 import { getSession } from "@auth0/nextjs-auth0";
-import Image from "next/image";
+import { FaUpload } from "react-icons/fa";
+import { RiLogoutBoxLine } from "react-icons/ri"
+
 
 
 
@@ -14,8 +16,9 @@ export default async function Header() {
         <main className="header-container">
             <Link href="/movies"><img src="./movie-hub-logo_vx2bju.png" alt="logo" height={"60px"} className="logo"/></Link>
             <div className="user">
-                <button><Link href="api/auth/logout">Logout</Link></button>
+                <Link href="/form"><FaUpload className="upload-buton" size={25} /></Link>
                 <h3>Hello dear {session?.user.name}</h3>
+                <Link href="api/auth/logout"><RiLogoutBoxLine className="upload-buton" size={35} /></Link>
                 <img src={session?.user.picture} className="img-profile" alt={session?.user.name}/>
             </div>
         </main>

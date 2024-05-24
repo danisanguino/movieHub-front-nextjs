@@ -49,14 +49,6 @@ export async function UploadMovie (data: any) {
     }
 
     
-        // const response = await fetch(MovieHub + "/inputsmovie/1", {
-        //   method: 'POST',
-        //   headers: {
-        //     'Content-Type': 'application/json',
-        //   },
-        //   body: JSON.stringify(data),
-        // });
-    
 }
 
 

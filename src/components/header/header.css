@@ -8,6 +8,17 @@
     margin-bottom: 1rem;
 }
 
+.header-container .upload-buton {
+    color: rgb(211, 211, 211);
+    transition: color ease 0.3s;
+
+}
+
+.header-container .upload-buton:hover {
+    color: #bb2121;
+
+}
+
 .header-container .user {
     display: flex;
     justify-content: space-between;
