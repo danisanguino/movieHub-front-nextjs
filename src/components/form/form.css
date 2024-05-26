@@ -5,23 +5,17 @@
     width: 100%; 
     height: calc(100vh - 8rem);
     align-items: center;
-    /* justify-content: center; */
 
 }
 
-.form-upload {
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;  */
+.container-form .form-upload {
     width: 30rem;
     text-align: center;
 
  
 }
 
-.form-upload input {
+.container-form .form-upload input {
     width: 30rem;
     border: none;
     background-color: transparent;
@@ -35,7 +29,7 @@
     border-bottom: 2px solid grey;
 }
 
-.form-upload textarea {
+.container-form .form-upload textarea {
     width: 30rem;
     height: 13rem;
     border: none;
@@ -51,11 +45,8 @@
 
 }
 
-/* .form-upload button {
-    width: 20rem;
-} */
 
-.form-upload button {
+.container-form .form-upload button {
     height: 5rem;
     padding: 0 3rem 0 3rem;
     font-size: 1.5rem;
@@ -68,11 +59,59 @@
     text-align: center;
 }
 
-.form-upload button:hover {
+.container-form .form-upload button:hover {
     border: 3px solid #bb2121;
 }
 
-.form-upload button a {
+.container-form .form-upload button a {
     text-decoration: none;
     color: rgb(70, 70, 70);
 }
+
+.container-form .link-delete-movie {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #bb2121;
+    transition: color ease 0.3s;
+}
+
+.container-form .link-delete-movie:hover{
+    color: rgb(209, 209, 209);
+}
+
+
+.container-form-delete {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%; 
+    height: calc(100vh - 8rem);
+    align-items: center;
+}
+
+.container-form-delete ul {
+    list-style-type: none;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.container-form-delete li {
+    text-decoration: none;
+    color:aquamarine;
+}
+
+.container-form-delete li a {
+    text-decoration: none;
+    color:aquamarine;
+}
+
+.container-form-delete li:hover {
+    text-decoration: none;
+    color:blueviolet ;
+}
+
+

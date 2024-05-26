@@ -5,18 +5,17 @@ dotenv.config();
 const MovieHub: string = process.env.NEXT_PUBLIC_LOCALHOST_URL || "" ; 
 
 
-
 export async function FMovies() {
     try {
         const data = await axios.get(MovieHub + "/movie");
         return data
-
-        
+      
     } catch (error) {
         console.log(error);
-    }
-    
+    }  
 } 
+
+
 
 export async function FGenres() {
     const data = await fetch(MovieHub + "/genre");
@@ -34,20 +33,25 @@ export async function FOneMovie (id: string) {
 }
 
 
-export async function UploadMovie (data: any) {
-    
-        
+export async function UploadMovie (data: any) {     
     try {
-      const response = await axios.post(MovieHub + "/inputsmovie/1", data, 
-        // headers: {
-        //   'Content-Type': 'application/json',
-        // },
-        );  
+      const response = await axios.post(MovieHub + "/inputsmovie/1", data);  
         
     } catch (error) {
         console.log(error);
     }
+}
 
+//BORRAR PELICULA
+export async function DeleteMovie (id: string) {
+    
+    try {
+        const data = await axios.delete(MovieHub + "/movie/" + id)
+        return data
+        
+    } catch (error) {
+        console.log(error);
+    }
     
 }
 

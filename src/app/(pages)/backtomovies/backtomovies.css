@@ -1,0 +1,10 @@
+.container-back {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%; 
+    height: calc(100vh - 8rem);
+    align-items: center;
+    justify-content: center;
+
+}

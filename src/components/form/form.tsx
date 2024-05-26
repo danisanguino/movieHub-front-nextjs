@@ -6,6 +6,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from '@hookform/resolvers/zod';
 import { movieSchema } from '@/validations/movieSchema';
 import { UploadMovie } from '@/utils/functions';
+import Link from 'next/link';
 
 
 type FormValues = {
@@ -20,10 +21,14 @@ export default function Form () {
             resolver: zodResolver(movieSchema)
     });
 
+
     const onSubmit: SubmitHandler<FormValues> = async (data) => {
             
         const result = await UploadMovie(data);
         reset();
+        setTimeout(() => {
+            window.location.href = "/backtomovies";
+        }, 1000);
     }
 
     return (
@@ -65,6 +70,7 @@ export default function Form () {
                 <button className='form-button'>Insert</button>
 
             </form>
+            <Link href={"/deletemovie"} className='link-delete-movie'>Delete Movies</Link>
         </div>
     );
 }
