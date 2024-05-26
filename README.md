@@ -1,5 +1,7 @@
 <h1>MovieHub 🎬</h1>
-<img src="https://res.cloudinary.com/drp3zy62g/image/upload/v1716710121/Captura_de_pantalla_2024-05-26_a_las_9.55.07_p0x2nv.png">
+<img src="https://res.cloudinary.com/drp3zy62g/image/upload/v1716711769/moviebuh-project-frontend_z068j7.jpg" alt="MovieHub project frontend">
+![Imagen weni cloudinari](https://res.cloudinary.com/drp3zy62g/image/upload/v1716710121/Captura_de_pantalla_2024-05-26_a_las_9.55.07_p0x2nv.png)
+
 MovieHub is a responsive movie portal that works seamlessly on laptops, tablets, and mobile devices. Users can register and upload movies through a dedicated form. The portal features a premium design with a dark mode option.
 
 <h2>Features ⭐️</h2>
@@ -36,6 +38,13 @@ npm run dev</li>
 <li>Important Notes
 *Styles: Be cautious with the styles. If any style-related issues occur, delete node_modules and reinstall dependencies:
 npm i</li>
+</ul>
+
+<h4>Dependences</h4>
+<ul>
+<li>npm i -D dotenv</li>
+<li>npm i zod</li>
+<li>npm i @hookform/resolvers</li>
 </ul>
 
 

@@ -1,11 +1,16 @@
 .header-container{
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem;
+    
+    padding: 1rem 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.header-container .logo {
+    height: 60px;
 }
 
 .header-container .upload-buton {
@@ -31,4 +36,20 @@ border-radius: 50%;
 width: 5rem;
 height: 5rem;
 object-fit: cover;
+}
+
+
+@media (max-width: 620px) {
+
+    .header-container {
+        /* background-color: red; */
+        flex-direction: column;
+    }
+
+    .header-container .logo {
+        height: 100px;
+    }
+
+
+
 }
