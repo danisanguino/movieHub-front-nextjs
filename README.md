@@ -23,7 +23,6 @@ To get a local copy up and running, follow these simple steps.
 <h3>Prerequisites</h3>
 Node.js and npm installed on your machine.
 
-#react #nextjs #CI #CD #vitest #movies #jenkins #frontend #typescript #react-testing-library 
 
 
 <h3>Installation</h3>
@@ -52,3 +51,5 @@ npm i</li>
 <h3>Usage</h3>
 Register: Create an account to start uploading movies.
 Upload Movies: Use the provided form to submit movies. They will appear on the portal after submission.
+
+#react #nextjs #CI #CD #vitest #movies #jenkins #frontend #typescript #react-testing-library 
