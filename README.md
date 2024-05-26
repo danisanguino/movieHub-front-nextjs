@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>MovieHub 🎬</h1>
+<img src="https://res.cloudinary.com/drp3zy62g/image/upload/v1716710121/Captura_de_pantalla_2024-05-26_a_las_9.55.07_p0x2nv.png">
+MovieHub is a responsive movie portal that works seamlessly on laptops, tablets, and mobile devices. Users can register and upload movies through a dedicated form. The portal features a premium design with a dark mode option.
 
-## Getting Started
+<h2>Features ⭐️</2>
+Responsive Design: Optimized for laptops, tablets, and mobile devices.
+User Registration: Users can register to gain access to upload features.
+Movie Upload: Users can submit movies through a form, which will be displayed on the portal.
+Premium Design: Modern, premium design with dark mode support.
+Technologies Used
+<ul>
+    <li>React</li>
+<li>Next.js</li>
+<li>API Calls: Integration with backend for movie data handling.</li>
+</ul>
 
-First, run the development server:
 
-```bash
+
+<h2>Getting Started</h2>
+To get a local copy up and running, follow these simple steps.
+
+<h3>Prerequisites</h3>
+Node.js and npm installed on your machine.
+
+
+<h3>Installation</h3>
+Clone the repo:
+
+git clone https://github.com/your-username/MovieHub.git
+Install NPM packages:
+sh
+
+
+npm install
+Running the Project
+To run the project locally, use the following command:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Important Notes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*Styles: Be cautious with the styles. If any style-related issues occur, delete node_modules and reinstall dependencies:
+sh
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+npm i
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Usage
+Register: Create an account to start uploading movies.
+Upload Movies: Use the provided form to submit movies. They will appear on the portal after submission.
