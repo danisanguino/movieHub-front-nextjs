@@ -1,6 +1,5 @@
 <h1>MovieHub 🎬</h1>
 <img src="https://res.cloudinary.com/drp3zy62g/image/upload/v1716711769/moviebuh-project-frontend_z068j7.jpg" alt="MovieHub project frontend">
-![Imagen weni cloudinari](https://res.cloudinary.com/drp3zy62g/image/upload/v1716710121/Captura_de_pantalla_2024-05-26_a_las_9.55.07_p0x2nv.png)
 
 MovieHub is a responsive movie portal that works seamlessly on laptops, tablets, and mobile devices. Users can register and upload movies through a dedicated form. The portal features a premium design with a dark mode option.
 
@@ -23,6 +22,8 @@ To get a local copy up and running, follow these simple steps.
 
 <h3>Prerequisites</h3>
 Node.js and npm installed on your machine.
+
+#react #nextjs #CI #CD #vitest #movies #jenkins #frontend #typescript #react-testing-library 
 
 
 <h3>Installation</h3>
