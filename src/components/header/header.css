@@ -48,6 +48,7 @@ object-fit: cover;
 
     .header-container .logo {
         height: 100px;
+        margin-bottom: 10px;
     }
 
 

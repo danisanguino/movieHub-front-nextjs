@@ -5,9 +5,7 @@ import "./login.css"
 export default function Loading() {
     return (
     <main className="container">
-      <div className="login">
-        <h4>Error, something is not working fine</h4>
-    </div>
+        <h2>Error, something is not working well</h2>
     </main>
     )
 }

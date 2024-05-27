@@ -10,15 +10,15 @@ import { FMovies } from '@/utils/functions';
 export default async function Movies() {
 
   try {
-    const FetchingMovies = await FMovies()
+    const fetchingMovies = await FMovies()
 
     return (
       <>
-          <h1>Movies</h1>
+          <h1>Pelis</h1>
   
           <div className='container-movies'>
 
-              {FetchingMovies?.data.map((e: Movie) => {
+              {fetchingMovies?.data.map((e: Movie) => {
                 
                 return (
                   <MovieCard

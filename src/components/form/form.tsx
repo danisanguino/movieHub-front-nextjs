@@ -6,6 +6,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from '@hookform/resolvers/zod';
 import { movieSchema } from '@/validations/movieSchema';
 import { UploadMovie } from '@/utils/functions';
+import Link from 'next/link';
 
 
 type FormValues = {
@@ -20,17 +21,21 @@ export default function Form () {
             resolver: zodResolver(movieSchema)
     });
 
+
     const onSubmit: SubmitHandler<FormValues> = async (data) => {
             
         const result = await UploadMovie(data);
         reset();
+        setTimeout(() => {
+            window.location.href = "/backtomovies";
+        }, 500);
     }
 
     return (
         <div className='container-form'>
-          <h2>Insert a Movie</h2>
+          <h2>Subir película</h2>
             <form onSubmit={handleSubmit(onSubmit)} className='form-upload'>
-                 <input type="text" id="image" placeholder='Url of image here' 
+                 <input type="text" id="image" placeholder='Url de la imagen' 
                  {...register("image", { required: 'Image is required' })}
                  />
                  {
@@ -38,14 +43,14 @@ export default function Form () {
                  }
 
 
-                <input type="text" id="title"  placeholder='Title of movie'
+                <input type="text" id="title"  placeholder='Título aquí'
                 {...register("title", { required: 'Title is required' })}
                 />
                 {
                     errors.title?.message && <p>{errors.title?.message}</p>
                  }
 
-                <textarea id="sinopsis" placeholder='Write the sinopsis'
+                <textarea id="sinopsis" placeholder='Escribe la sinopsis'
                 {...register("sinopsis")} 
                 />
                 {
@@ -53,18 +58,16 @@ export default function Form () {
                  }
 
 
-                <input type="text" id="score"  placeholder='Please the puntuation'
+                <input type="text" id="score"  placeholder='No olvides la puntuación'
                 {...register("score")}/>
                 {
                     errors.score?.message && <p>{errors.score?.message}</p>
                  }
                 
-                {/* <GeneralButton
-                    link=""
-                    title='INSERT'/> */}
-                <button className='form-button'>Insert</button>
+                <button className='form-button'>SUBIR</button>
 
             </form>
+            <Link href={"/deletemovie"} className='link-delete-movie'>Eliminar pelis</Link>
         </div>
     );
 }
