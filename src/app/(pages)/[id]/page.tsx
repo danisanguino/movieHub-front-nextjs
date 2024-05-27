@@ -42,12 +42,12 @@ export default async function MovieDetail ({params}: Props) {
 
 
                 </ul>
-                <h4>Score</h4>
+                <h4>Puntuación</h4>
                 <div className="score-back">
                 <h5>{JSONdata.score} </h5>
                  </div>
                  <GeneralButton
-                    title={"BACK"}
+                    title={"VOLVER"}
                     link={"movies"}
                     />
 

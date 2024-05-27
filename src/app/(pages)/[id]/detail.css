@@ -54,22 +54,3 @@
 
 }
 
-.container-movie-detail button {
-    font-size: 1.4rem;
-    font-family: Montserrat;
-    font-weight: 600;
-    height: 4rem;
-    width: 8rem;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 3px solid #777;
-  }
-  
-  .container-movie-detail  button a {
-    text-decoration: none;
-    color: #777;
-  }
-  
-  .container-movie-detail button:hover {
-    border: 3px solid #bb2121;
-  }

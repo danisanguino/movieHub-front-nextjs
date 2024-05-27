@@ -9,8 +9,8 @@ export default function BackToMoviesDelete () {
         <main className="container-back">
         <h2>La película se ha eliminado con éxito</h2>
         <GeneralButton
-         title={"Back to movies"}
-         link={"/backtomoviesdelete"}
+         title={"VOLVER A PELÍCULAS"}
+         link={"/movies"}
          />
         </main>
     )

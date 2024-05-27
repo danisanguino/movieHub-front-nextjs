@@ -14,7 +14,7 @@ export default async function Movies() {
 
     return (
       <>
-          <h1>Movies</h1>
+          <h1>Pelis</h1>
   
           <div className='container-movies'>
 
