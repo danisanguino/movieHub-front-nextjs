@@ -46,9 +46,6 @@
     font-weight: 600;
 }
 
-.container-movie-detail .movie-data {
-    /* background-color: blueviolet; */
-}
 
 .container-movie-detail .movie-data .score-back {
     display: flex;

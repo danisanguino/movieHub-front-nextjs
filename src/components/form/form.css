@@ -100,8 +100,7 @@
 }
 
 .container-form-delete button {
-    width: 300px;
-    height: 100px;
+    padding: 0.4rem 1rem 0.4rem 1rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -109,10 +108,11 @@
     font-size: 2rem;
     font-weight: 600;
     font-family: Montserrat;
+    transition: color ease 0.3s;
 }
 
 .container-form-delete button:hover {
-    background-color: red;
+    color :#bb2121;
 }
 
 
