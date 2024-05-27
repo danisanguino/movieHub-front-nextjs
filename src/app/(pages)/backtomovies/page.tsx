@@ -7,7 +7,7 @@ export default function BackToMovies () {
 
     return (
         <main className="container-back">
-        <h2>Your movie has been upload sucefully</h2>
+        <h2>Tu película se ha subido correctamente</h2>
         <GeneralButton
          title={"Back to movies"}
          link={"/movies"}

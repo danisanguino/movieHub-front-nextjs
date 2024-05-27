@@ -93,25 +93,27 @@
 
 .container-form-delete ul {
     list-style-type: none;
-    font-size: 3rem;
-    font-weight: 600;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-form-delete button {
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
+    color: rgb(219, 219, 219);
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Montserrat;
 }
 
-.container-form-delete li {
-    text-decoration: none;
-    color:aquamarine;
+.container-form-delete button:hover {
+    background-color: red;
 }
 
-.container-form-delete li a {
-    text-decoration: none;
-    color:aquamarine;
-}
-
-.container-form-delete li:hover {
-    text-decoration: none;
-    color:blueviolet ;
-}
 
 

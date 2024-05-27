@@ -42,8 +42,8 @@ export async function UploadMovie (data: any) {
     }
 }
 
-//BORRAR PELICULA
-export async function DeleteMovie (id: string) {
+//DELETE MOVIE
+export async function DeleteMovie (id: number) {
     
     try {
         const data = await axios.delete(MovieHub + "/movie/" + id)
