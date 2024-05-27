@@ -1,6 +1,6 @@
 "use client"
 
-import DeleteForm from "@/components/form/form-delete";
+// import DeleteForm from "@/components/form/form-delete";
 
 
 export default function DeleteMovie() {
