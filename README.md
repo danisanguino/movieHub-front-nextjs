@@ -1,3 +1,5 @@
+`#next.js` `#frontend` `#API` `#react` `#typescript`
+
 <h1>MovieHub 🎬</h1>
 <img src="https://res.cloudinary.com/drp3zy62g/image/upload/v1716823905/montaje_front_movie_hub_u1lrol.jpg" alt="MovieHub project frontend">
 
