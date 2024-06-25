@@ -10,7 +10,7 @@ Movie Upload: Users can submit movies through a form, which will be displayed on
 Premium Design: Modern, premium design with dark mode support.
 Technologies Used
 <ul>
-    <li>React</li>
+<li>React</li>
 <li>Next.js</li>
 <li>API Calls: Integration with backend for movie data handling.</li>
 </ul>

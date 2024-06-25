@@ -1,10 +1,10 @@
-import Button from "@/components/button/button";
 import "./detail.css";
 import { Movie, Genre, MovieGenre } from "@/app/interface";
 // import Button from "@/components/button/button";
 import GeneralButton from "@/components/button/generalButton";
 import { FGenres, FOneMovie } from "@/utils/functions";
 import dotenv from 'dotenv';
+import Image from "next/image";
 
 dotenv.config();
 
@@ -25,7 +25,7 @@ export default async function MovieDetail ({params}: Props) {
     <>
         <h1>{JSONdata.title}</h1>
         <div className="container-movie-detail">
-            <img src={JSONdata.image} alt={JSONdata.title}/>
+            <Image src={JSONdata.image} alt={JSONdata.title} width={400} height={600}/>
             <div className="movie-data">
                 <h3>Sinopsis</h3>
                 <p>{JSONdata.sinopsis}</p>

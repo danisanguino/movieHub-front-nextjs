@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import "./sidebar.css"
 import Link from "next/link";
 import { FaUpload } from "react-icons/fa";

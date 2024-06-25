@@ -13,59 +13,18 @@
   
   
   .container .login {
-    /* background-color: red; */
     text-align: center;
   
   }
-  
-  .login .form-login {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    
-  }
-  
-  .login .form-login .input-form-login {
-    font-size: 1.5rem;
-    font-family: Montserrat;
-    color:#6e6e6e;
-    margin: 1rem 0 1rem 0;
-    padding: 0.5rem;
-    border: none;
-    height: 2rem;
-    border-radius: 5px;
-    width: 20rem;
-  }
+
   
   .login p{
     margin-bottom: 40px;
   } 
 
-  .login .form-login button {
-    font-size: 1.4rem;
-    font-family: Montserrat;
-    font-weight: 600;
-    padding: 2rem;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 3px solid #777;
-  }
-  
-  .login .form-login button a {
-    text-decoration: none;
-    color: #777;
-  
-  }
-  
-  .login .form-login button:hover {
-    
-    border: 3px solid #bb2121;
-  }
-  
 
-  /* BOTON CHACHI */
+  /* COOL BUTON */
 
-  /* === removing default button style ===*/
 .button {
   margin: 0;
   height: auto;
@@ -90,6 +49,7 @@
   color: transparent;
   -webkit-text-stroke: 1px #777;
 }
+
 /* this is the text, when you hover on button */
 .hover-text {
   position: absolute;
@@ -103,6 +63,7 @@
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
+
 /* hover */
 .button:hover .hover-text {
   width: 100%;

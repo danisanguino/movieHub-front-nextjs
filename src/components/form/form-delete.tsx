@@ -1,5 +1,3 @@
-
-
 import { DeleteMovie, FMovies } from '@/utils/functions';
 import { Movie } from '@/app/interface';
 import "./form.css"
@@ -14,7 +12,7 @@ export default async function DeleteForm () {
              await DeleteMovie(id)
              setTimeout(() => {
                 window.location.href = "/backtomoviesdelete";
-            }, 500);
+            }, 300);
          };
 
          handlerDeleteMovie();
@@ -24,14 +22,16 @@ export default async function DeleteForm () {
     
     return (
         <div className='container-form-delete'>
-            <h2>Borrar Película</h2>
-            <h3>Por favor, click en el título para eliminar</h3>
-            <ul>
-            {movieToDelete?.data.map((movie: Movie)=> {        
-                return <button onClick={()=>{handlerDelete(movie.id)}}><li key={movie.id}>{movie.title}</li></button>
-            })}
-            </ul>
-        </div>
+      <h2>Borrar Película</h2>
+      <h3>Por favor, click en el título para eliminar</h3>
+      <ul>
+        {movieToDelete?.data.map((movie: Movie) => (
+          <li key={movie.id}>
+            <button onClick={() => handlerDelete(movie.id)}>{movie.title}</button>
+          </li>
+        ))}
+      </ul>
+    </div>
         
     )
 }
