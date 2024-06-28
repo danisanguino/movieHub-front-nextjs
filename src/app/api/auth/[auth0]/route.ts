@@ -6,7 +6,7 @@ export const GET = handleAuth(
     login: handleLogin ({
         authorizationParams: {
             //Poner el link del back HERE!!!
-            audience: "http://localhost:3800"
+            audience: "https://moviehubprojectbackend-develop.up.railway.app"
         },
         returnTo:"/movies"
     })
