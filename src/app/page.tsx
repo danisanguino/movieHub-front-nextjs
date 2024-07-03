@@ -14,7 +14,7 @@ export default function Home() {
         height={127}
         />
         <h2>Welcome</h2>
-        <p>This a movie hub, to see and upload movies you must to ge loged</p>
+        <p>This a movie hub, to see and upload movies you must be loged</p>
       
           <Button
             title={` Start! `}
