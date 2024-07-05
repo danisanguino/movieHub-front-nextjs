@@ -1,10 +1,10 @@
 import "./detail.css";
 import { Movie, Genre, MovieGenre } from "@/app/interface";
-// import Button from "@/components/button/button";
 import GeneralButton from "@/components/button/generalButton";
 import { FGenres, FOneMovie } from "@/utils/functions";
 import dotenv from 'dotenv';
 import Image from "next/image";
+
 
 dotenv.config();
 
