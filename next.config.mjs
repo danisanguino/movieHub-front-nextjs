@@ -20,7 +20,7 @@ module.exports = {
     pageConfig: {
       timeout: 300000
     }
-  };
+  }
 
 export default nextConfig;
 
