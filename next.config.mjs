@@ -14,13 +14,13 @@ const nextConfig = {
     }
 };
 
-module.exports = {
-    target: 'serverless',
+// module.exports = {
+//     target: 'serverless',
     
-    pageConfig: {
-      timeout: 300000
-    }
-  }
+//     pageConfig: {
+//       timeout: 300000
+//     }
+//   }
 
 export default nextConfig;
 
