@@ -14,6 +14,14 @@ const nextConfig = {
     }
 };
 
+module.exports = {
+    target: 'serverless',
+    
+    pageConfig: {
+      timeout: 300000
+    }
+  };
+
 export default nextConfig;
 
 
