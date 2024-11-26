@@ -54,3 +54,11 @@
 
 }
 
+@media (max-width: 620px) {
+
+    .container-movie-detail {
+        flex-direction: column;
+    }
+
+}
+
