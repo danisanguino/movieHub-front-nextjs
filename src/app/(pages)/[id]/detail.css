@@ -55,13 +55,15 @@
 }
 
 @media (max-width: 620px) {
-
     .container-movie-detail {
         flex-direction: column;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .container-movie-detail img {
         height: 100%;
+        max-width: 100%;
     }
 }
 
