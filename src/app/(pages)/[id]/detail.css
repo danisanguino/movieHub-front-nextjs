@@ -58,7 +58,11 @@
 
     .container-movie-detail {
         flex-direction: column;
+        text-align: center;
     }
-
+    .container-movie-detail img {
+        width: 100%;
+    
+    }
 }
 
